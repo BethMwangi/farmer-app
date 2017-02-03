@@ -1,4 +1,8 @@
 import csv
+from datetime import datetime
+
+
+
 
 farmer_with_maxmass= None
 farmer_with_minmass = None
@@ -16,7 +20,22 @@ for line in file:
 	# get the total_biomass column 
 	farmers_name = (line.split(",")[0])
 	total_biomass = float((line.split(","))[11])
-	# print list((farmers_name, total_biomass))
+	# accessing the date column for sorting
+	date = (line.split(",")[7])
+	if date == "10/70/2015":
+		continue
+	else:
+		date = datetime.strptime(date ,"%d/%m/%Y")
+		# print date
+		# days_sorted = sorted(file, key=lambda date:date, reverse=True)
+
+
+
+		# print days_sorted
+
+
+
+	    # print list((farmers_name, total_biomass))
 
 	if farmer_with_maxmass is None and max_biomass is None:
 		farmer_with_maxmass = farmers_name
