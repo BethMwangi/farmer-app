@@ -2,8 +2,6 @@ import csv
 from datetime import datetime
 
 
-
-
 farmer_with_maxmass= None
 farmer_with_minmass = None
 max_biomass = None
