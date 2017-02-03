@@ -18,5 +18,7 @@ $ pip install -r requirements.txt
  ## To execute the demo run the commands
 
  ```sh
+
 $ PYTHONPATH=../ python ./python farmer.py (get max and min biomass)
 $ PYTHONPATH=../ python ./python farmer2.py (get average, sort and dump data to db)
+
